@@ -5,8 +5,8 @@ import todos from '../todoItems';
 const TodoList = () => {
     const [items, setItems] = useState(todos);
     const [listIndex, setListIndex] = useState(0);
-    const [newTitle, setNewTitle] = useState(''); // Track the new title
-    const [newDueDate, setNewDueDate] = useState(''); // Track the new due date
+    const [newTitle, setNewTitle] = useState(''); 
+    const [newDueDate, setNewDueDate] = useState(''); 
 
     const getColor = (dueDate) => {
         const now = new Date();
@@ -25,14 +25,14 @@ const TodoList = () => {
         if (newTitle && newDueDate) {
             const newItem = {
                 title: newTitle,
-                description: 'No description', // Default description for new items
+                description: 'No description', 
                 dueDate: newDueDate,
             };
             
-            // Update the items list with the new item
+           
             setItems([...items, newItem]);
 
-            // Clear the form inputs
+           
             setNewTitle('');
             setNewDueDate('');
         }
@@ -54,7 +54,7 @@ const TodoList = () => {
                                         action
                                         href={`#${item.title}`}
                                         eventKey={item.title}
-                                        onClick={() => setListIndex(index)} // Fixed: wrapped in an arrow function
+                                        onClick={() => setListIndex(index)} 
                                     >
                                         {item.title}
                                     </ListGroup.Item>

@@ -1,14 +1,4 @@
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
-
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
 import { render, screen, fireEvent } from '@testing-library/react';
-// import TodoList from './ToDoList';
 import TodoList from './Components/TodoList';
 
 
@@ -37,7 +27,7 @@ describe('TodoList Component', () => {
   test('renders todo items', () => {
     render(<TodoList />);
     const todoItems = screen.getAllByRole('tab');
-    expect(todoItems.length).toBe(4); // Assuming there are 4 todos in the initial state
+    expect(todoItems.length).toBe(4); 
   });
 
   test('renders todo items with correct titles', () => {
@@ -68,10 +58,10 @@ describe('TodoList Component', () => {
     let variants = [];
     todoItems.forEach((item) => {
       const input = item.querySelector('input');
-      const dueDate = input.getAttribute('value'); // Assuming due date is stored in a data attribute
+      const dueDate = input.getAttribute('value'); 
       const expectedVariant = getVariant(dueDate);
       variants.push(expectedVariant);
-      //expect(item).toHaveClass(`list-group-item-${expectedVariant}`);
+    
     });
 
     todoTab.forEach((item, index) => {

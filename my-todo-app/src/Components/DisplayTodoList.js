@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, ListGroup, Tab, Form, Button } from 'react-bootstrap';
 import todos from '../todoItems';
 
-import '../DisplayTodoList.css'; // Import the CSS file
+import '../DisplayTodoList.css'; 
 
 const DisplayTodoList = () => {
     const [items, setItems] = useState(todos);
