@@ -18,7 +18,7 @@ const TodoList = () => {
 
     return (
         <Container>
-            <h1>Assignment 2: Your Name ToDo List</h1>
+            <h1>Assignment 2: Thrilok's ToDo List</h1>
             <Row>
                 <Col md={4}>
                     <ListGroup>
