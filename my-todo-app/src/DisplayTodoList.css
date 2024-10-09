@@ -1,0 +1,16 @@
+.main_row{
+
+    display: flex; /* Ensure that the row is a flex container */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    border-radius: 0.25rem; /* Optional: rounded corners */
+    padding: 10px; /* Optional: add some padding inside the border */
+    margin: 10px; /* Optional: add some margin outside the border */
+}
+.add-form{
+    display: flex; /* Ensure that the row is a flex container */
+    flex-direction: column; /* Set the direction to column */
+    background-color: green; /* Set the background color to green */
+    gap:20px;
+}

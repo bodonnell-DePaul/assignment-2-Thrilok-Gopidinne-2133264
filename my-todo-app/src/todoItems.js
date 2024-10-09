@@ -1,24 +1,26 @@
-const todoItems = [
-    {
-        title: 'Finish Assignment',
-        description: 'Complete the ToDo List application for school.',
-        dueDate: '2024-10-15',
-    },
-    {
-        title: 'Grocery Shopping',
-        description: 'Buy vegetables and fruits for the week.',
-        dueDate: '2024-10-12',
-    },
-    {
-        title: 'Read a Book',
-        description: 'Read "The Great Gatsby".',
-        dueDate: '2024-10-18',
-    },
-    {
-        title: 'Workout',
-        description: 'Go for a run or hit the gym.',
-        dueDate: '2024-10-10',
-    },
-];
+const todos = [
+    { title: 'Todo 1', description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.`, dueDate: '2024-10-15' },
 
-export default todoItems;
+    { title: 'Todo 2', description: `Sed auctor nunc nec nisi ultrices, in molestie nibh mattis. 
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Suspendisse potenti. Nullam nec nibh nibh. Nullam quis nisl nec nunc congue mollis. 
+    Vivamus nec nisi nec nunc mattis molestie. Sed auctor nunc nec nisi ultrices, in molestie nibh mattis.`, dueDate: '2024-10-12' },
+
+    { title: 'Todo 3', description: `Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Suspendisse potenti. Nullam nec nibh nibh. Nullam quis nisl nec nunc congue mollis. Vivamus nec nisi nec nunc mattis molestie. 
+    Sed auctor nunc nec nisi ultrices, in molestie nibh mattis. Pellentesque habitant morbi tristique 
+    senectus et netus et malesuada fames ac turpis egestas.`, dueDate: '2024-10-18' },
+
+    { title: 'Todo 4', description: `Suspendisse potenti. Nullam nec nibh nibh. Nullam quis nisl nec nunc congue mollis. 
+    Vivamus nec nisi nec nunc mattis molestie. Sed auctor nunc nec nisi ultrices, in molestie nibh mattis. 
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. 
+    Nullam nec nibh nibh. Nullam quis nisl nec nunc congue mollis. `, dueDate: '2024-10-18' },
+  ];
+
+export default todos;
